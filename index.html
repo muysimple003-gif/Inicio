@@ -42,30 +42,35 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
+            background-color: #f4f4f4;
         }
 
+        /* ESTE ES TU BOTÓN ORIGINAL */
         .btn-ingresar {
             background-color: #003953;
             color: white;
             font-family: 'Poppins', sans-serif;
             font-weight: 700;
             font-size: 1.5rem;
-            padding: 20px 60px;
+            padding: 20px 40px;
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            box-shadow: 0 8px 20px rgba(0, 57, 83, 0.6);
+            box-shadow: 0 8px 20px rgba(0, 57, 83, 0.4);
             transition: all 0.3s ease;
             outline: none;
             letter-spacing: 1px;
             width: 100%;
             max-width: 300px;
+            text-align: center;
+            text-decoration: none; /* Agregado para que el link no se subraye */
+            display: inline-block; /* Agregado para que mantenga el tamaño */
         }
 
         .btn-ingresar:hover {
             background-color: #00283d;
             transform: translateY(-3px);
-            box-shadow: 0 12px 25px rgba(0, 57, 83, 0.8);
+            box-shadow: 0 12px 25px rgba(0, 57, 83, 0.6);
         }
 
         .btn-ingresar:active {
@@ -76,14 +81,9 @@
             .container {
                 flex-direction: column;
             }
-            
-            .image-column {
-                height: 66.67vh;
-            }
-            
-            .button-column {
-                height: 33.33vh;
-            }
+            .image-column { height: 60vh; }
+            .button-column { height: 40vh; }
+            .btn-ingresar { font-size: 1.2rem; }
         }
     </style>
 </head>
@@ -92,8 +92,11 @@
         <div class="image-column">
             <img src="images/Inicio.jpg" alt="Fondo del juego">
         </div>
+
         <div class="button-column">
-            <button class="btn-ingresar">Clic para ingresar al juego</button>
+            <a href="https://muysimple003-gif.github.io/1-360/" class="btn-ingresar">
+                Clic para ingresar al juego
+            </a>
         </div>
     </div>
 </body>
